@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>使用GitHub Pages和Hexo搭建免费独立博客 | Ditt.Cy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前言这是一篇使用GitHub Pages和Hexo搭建免费独立博客的总结。作为一个码农，白是白了点，但深知技术博客的重要性，几经周折了解并搭建起这个博客平台，希望能够以此为起点，开始我的技术博客之路。这里主要介绍搭建过程及遇到的一些坑，网上的信息比较混乱，有些也不完整，每个人可能遇到的错误都不尽相同，这里也只能列出我所遇到的，具体问题还得具体看，当然，无外乎百度能都得到的一众问题，难度不大。">
+<meta name="keywords" content="技术,GitHub Pages,Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用GitHub Pages和Hexo搭建免费独立博客">
+<meta property="og:url" content="http://www.dittcy.cc/2016/07/03/使用GitHub Pages和Hexo搭建免费独立博客/index.html">
+<meta property="og:site_name" content="Ditt.Cy">
+<meta property="og:description" content="前言这是一篇使用GitHub Pages和Hexo搭建免费独立博客的总结。作为一个码农，白是白了点，但深知技术博客的重要性，几经周折了解并搭建起这个博客平台，希望能够以此为起点，开始我的技术博客之路。这里主要介绍搭建过程及遇到的一些坑，网上的信息比较混乱，有些也不完整，每个人可能遇到的错误都不尽相同，这里也只能列出我所遇到的，具体问题还得具体看，当然，无外乎百度能都得到的一众问题，难度不大。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2016-07-03T15:30:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用GitHub Pages和Hexo搭建免费独立博客">
+<meta name="twitter:description" content="前言这是一篇使用GitHub Pages和Hexo搭建免费独立博客的总结。作为一个码农，白是白了点，但深知技术博客的重要性，几经周折了解并搭建起这个博客平台，希望能够以此为起点，开始我的技术博客之路。这里主要介绍搭建过程及遇到的一些坑，网上的信息比较混乱，有些也不完整，每个人可能遇到的错误都不尽相同，这里也只能列出我所遇到的，具体问题还得具体看，当然，无外乎百度能都得到的一众问题，难度不大。">
+  
+    <link rel="alternative" href="/atom.xml" title="Ditt.Cy" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://7xvd22.com1.z0.glb.clouddn.com/avatar/tx3.jpg">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xvd22.com1.z0.glb.clouddn.com/avatar/tx3.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Ditt.Cy</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">小小程序猿</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/categories/技术">技术</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DittCy" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/luanhuanu" title="weibo">weibo</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/CentOS/" style="font-size: 10px;">CentOS</a> <a href="/tags/GitHub-Pages/" style="font-size: 10px;">GitHub Pages</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Shadowsocks/" style="font-size: 10px;">Shadowsocks</a> <a href="/tags/VPN/" style="font-size: 10px;">VPN</a> <a href="/tags/技术/" style="font-size: 20px;">技术</a> <a href="/tags/文章模板/" style="font-size: 10px;">文章模板</a> <a href="/tags/番羽土啬/" style="font-size: 15px;">番羽土啬</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">Writing my life.</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Ditt.Cy</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://7xvd22.com1.z0.glb.clouddn.com/avatar/tx3.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Ditt.Cy</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">小小程序猿</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/categories/技术">技术</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DittCy" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/luanhuanu" title="weibo">weibo</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-使用GitHub Pages和Hexo搭建免费独立博客" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/03/使用GitHub Pages和Hexo搭建免费独立博客/" class="article-date">
+  	<time datetime="2016-07-03T15:30:00.000Z" itemprop="datePublished">2016-07-03</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      使用GitHub Pages和Hexo搭建免费独立博客
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub-Pages/">GitHub Pages</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这是一篇使用GitHub Pages和Hexo搭建免费独立博客的总结。<br>作为一个码农，白是白了点，但深知技术博客的重要性，几经周折了解并搭建起这个博客平台，希望能够以此为起点，开始我的技术博客之路。<br>这里主要介绍搭建过程及遇到的一些坑，网上的信息比较混乱，有些也不完整，每个人可能遇到的错误都不尽相同，这里也只能列出我所遇到的，具体问题还得具体看，当然，无外乎百度能都得到的一众问题，难度不大。</p>
+<a id="more"></a>
+<hr>
+<h1 id="一、准备环境"><a href="#一、准备环境" class="headerlink" title="一、准备环境"></a>一、准备环境</h1><ul>
+<li><a href="https://git-scm.com/download/" target="_blank" rel="noopener">Git</a></li>
+<li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+<li><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></li>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Nodejs</a></li>
+<li><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></li>
+<li><a href="http://www.appinn.com/markdown/" target="_blank" rel="noopener">Markdown</a></li>
+<li><a href="https://www.dropbox.com/" target="_blank" rel="noopener">Dropbox</a></li>
+</ul>
+<p>Git及Nodejs 下载后一路回车安装即可。关于工具的概念性问题及用法请移步百度。</p>
+<h3 id="这里只简单说下GitHub-Pages："><a href="#这里只简单说下GitHub-Pages：" class="headerlink" title="这里只简单说下GitHub Pages："></a>这里只简单说下GitHub Pages：</h3><p>在自己的GitHub账号下创建一个新的仓库，命名为<code>username.github.io</code>（此即为你的博客域名，username自定义)。<br>GitHub Pages有几种类型，<a href="https://help.github.com/articles/user-organization-and-project-pages/" target="_blank" rel="noopener">这里了解</a>，而我所使用的是User Pages。简单来说，User Pages与Project Pages的区别是：</p>
+<blockquote>
+<ul>
+<li>User Pages是用来展示用户的，而Project Pages是用来展示项目的。</li>
+<li>用于存放User Pages的仓库必须使用<code>username.github.io</code>的命名规则，而Project Pages则没有特殊的要求。</li>
+<li>User Pages将使用仓库的<code>master</code>分支，而Project Pages将使用<code>gh-pages</code>分支。</li>
+<li>User Pages 通过<code>http(s)://username.github.io</code>进行访问，而Projects Pages通过<code>http(s)://username.github.io/projectname</code>进行访问。</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="二、Git"><a href="#二、Git" class="headerlink" title="二、Git"></a>二、Git</h1><h3 id="1-Git安装完成之后设置默认提交信息"><a href="#1-Git安装完成之后设置默认提交信息" class="headerlink" title="1. Git安装完成之后设置默认提交信息"></a>1. Git安装完成之后设置默认提交信息</h3><p>打开终端，依次执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"username"</span></span><br><span class="line">$ git config --global user.email <span class="string">"username@example.com"</span></span><br></pre></td></tr></table></figure></p>
+<p>对于<code>user.email</code>，因为在GitHub的commits信息上是可见的，所以如果你不想让人知道你的email，可以Keeping your email address private:</p>
+<ul>
+<li>在GitHub右上方点击你的头像，选择“Settings”；</li>
+<li>在右边的“Personal settings”侧边栏选择“Emails”；</li>
+<li>选择“Keep my email address private”。</li>
+<li>执行：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">"username@users.noreply.github.com"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-与GitHub建立联系（SSH）"><a href="#2-与GitHub建立联系（SSH）" class="headerlink" title="2. 与GitHub建立联系（SSH）"></a>2. 与GitHub建立联系（SSH）</h3><p>打开终端。</p>
+<ul>
+<li>检查电脑是否已经有SSH KEYS。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -al ~/.ssh</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>回车后看到“# Lists the files in your .ssh directory, if they exist……”字样，表示没有SSH key，进入下一步。</p>
+<ul>
+<li>生成新的SSH KEY。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -b 4096 -C <span class="string">"your_email@example.com"</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>一路回车</p>
+<ul>
+<li>在GitHub添加SSH KEY。拷贝KEY：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>然后，在GitHub右上方点击头像，选择“Settings”，在右边的“Personal settings”侧边栏选择“SSH and GPG Keys”，添加SSH KEY。<br>测试一下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
+<p>打印出“Hi username! You’ve successfully authenticated……”即连接成功。</p>
+<hr>
+<h1 id="三、Hexo"><a href="#三、Hexo" class="headerlink" title="三、Hexo"></a>三、Hexo</h1><p>Hexo安装非常简单，首先确保安装<a href="https://git-scm.com/download/" target="_blank" rel="noopener">Git</a>及<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Nodejs</a>。</p>
+<p>最好通过nvm安装nodejs，然后执行以下命令设置默认node版本，否则将出现hoxo:commond not found错误</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//安装稳定版nodejs</span><br><span class="line">$ nvm install lts</span><br><span class="line">//切换对应的版本</span><br><span class="line">$ nvm use 8.11.4</span><br><span class="line">//但是每次重启终端后改设置都会失效 所以要设置默认的版本</span><br><span class="line">$ nvm <span class="built_in">alias</span> default 8.11.4</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>打开终端，执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装完后，终端cd到你喜欢的文件夹位置，执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>这样，我们就已经搭建起本地的Hexo博客了。可以先执行以下命令（在对应文件夹下），然后在浏览器输入<code>localhost:4000</code>查看。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h1 id="四、Hexo-Theme"><a href="#四、Hexo-Theme" class="headerlink" title="四、Hexo Theme"></a>四、Hexo Theme</h1><p>改用喜欢的Theme（<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">yilia</a>为例）</p>
+<ol>
+<li>下载<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">yilia</a>源码，解压放到<code>\themes</code>下，例如：<code>D:\Hexo\themes\yilia</code></li>
+<li>修改Hexo根目录下<code>_config.yml</code>文件，修改文件：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#theme: landscape</span></span><br><span class="line">theme: yilia</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>tips：</p>
+<ul>
+<li><p>如果发现部署文章后代码块有遮盖现象，修改<code>\themes\yilia\source\css\_partial\highlight.styl</code>，大约第66行左右</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.line</span><br><span class="line">  font-size: 15px</span><br><span class="line">  height: 20px</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>要想主页每篇文章显示摘要而不是全文，需要在文章正文加上</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>此行以上为摘要，主页显示</p>
+<ul>
+<li>对于页面的个性化修改，关注Hexo根目录<code>_config.yml</code>和<code>\themes\yilia\_config.yml</code> 两个文件</li>
+</ul>
+<hr>
+<h1 id="五、部署到GitHub"><a href="#五、部署到GitHub" class="headerlink" title="五、部署到GitHub"></a>五、部署到GitHub</h1><h3 id="1-安装hexo-deployer-git插件"><a href="#1-安装hexo-deployer-git插件" class="headerlink" title="1. 安装hexo-deployer-git插件"></a>1. 安装hexo-deployer-git插件</h3><p>Hexo目录下执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-修改Hexo根目录-config-yml："><a href="#2-修改Hexo根目录-config-yml：" class="headerlink" title="2. 修改Hexo根目录_config.yml："></a>2. 修改Hexo根目录<code>_config.yml</code>：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: 对应仓库的SSH地址（可以在GitHub对应的仓库中复制）</span><br><span class="line">  branch: 分支（User Pages为master，Project Pages为gh-pages）</span><br></pre></td></tr></table></figure>
+<h3 id="3-执行部署"><a href="#3-执行部署" class="headerlink" title="3. 执行部署"></a>3. 执行部署</h3><p>Hexo目录下右键Git Base，执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>好了，至此 GitHub Pages + Hexo 搭建完成！浏览器键入你的仓库名（<code>username.github.io</code>）欢快的访问吧~</p>
+<hr>
+<h1 id="六、写作与维护"><a href="#六、写作与维护" class="headerlink" title="六、写作与维护"></a>六、写作与维护</h1><h3 id="1-Hexo程序文件备份"><a href="#1-Hexo程序文件备份" class="headerlink" title="1. Hexo程序文件备份"></a>1. Hexo程序文件备份</h3><p>由于GitHub上存放的只是供访问的页面文件，真正的Hexo程序文件及文章原始md文件都在本地，为了更有效的容灾，同时也便于多台设备间的协作，需要进行备份。网上很多人采用Git增加一个分支来管理Hexo程序文件，试了感觉实在是不好用，总之我放弃了……我选择了Dropbox进行文件同步协作，本身就一直在用Dropbox，所以没有额外的开销，缺点也很明显：需要翻墙……</p>
+<h3 id="2-新环境或者恢复"><a href="#2-新环境或者恢复" class="headerlink" title="2. 新环境或者恢复"></a>2. 新环境或者恢复</h3><p>重装系统、电脑损坏或者在一台新电脑上，我们只需要进行如下恢复工作：</p>
+<ul>
+<li>下载安装Dropbox将Hexo程序文件下载到本地（翻墙请自行解决）</li>
+<li>参照此文以上步骤在Hexo目录下依次执行搭建。对于<code>hexo init</code>：<br>  方案一：不执行<code>hexo init</code>这条语句，采用旧文件<br>  方案二（推荐）：备份修改过的Hexo程序文件和Theme文件，执行<code>hexo init</code>这条语句，然后将备份文件恢复。<h3 id="3-写作"><a href="#3-写作" class="headerlink" title="3. 写作"></a>3. 写作</h3>日常写作我选择 <a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">作业部落</a>，这是一个比较优秀的Markdown在线工具，界面美观友好。可以将写完的文章导出为Markdown文件，然后放到<code>hexo\source\_posts</code>目录下，执行：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>即部署到GitHub上了。</p>
+<h1 id="七、绑定域名"><a href="#七、绑定域名" class="headerlink" title="七、绑定域名"></a>七、绑定域名</h1><p>GitHub提供自定义域名的服务</p>
+<h3 id="1-DNSPod配置域名解析"><a href="#1-DNSPod配置域名解析" class="headerlink" title="1. DNSPod配置域名解析"></a>1. DNSPod配置域名解析</h3><ul>
+<li>添加两条A记录，分别指向<code>192.30.252.153</code>和<code>192.30.252.154</code>，记录值为空</li>
+<li>添加一条CNAME，指向<code>username.github.io</code>，记录值为<code>www</code></li>
+</ul>
+<h3 id="2-配置GitHub"><a href="#2-配置GitHub" class="headerlink" title="2. 配置GitHub"></a>2. 配置GitHub</h3><ul>
+<li>在你的仓库根目录下新建文件，命名为<code>CNAME</code>，不要加后缀名，文件内容为你的域名，例如<code>wwww.dittcy.cc</code>就可以了。</li>
+<li>需要注意的是，每次部署后<code>CNAME</code>文件就会被删除，这是因为Hexo部署为整个仓库全部替换文件。解决办法是，将<code>CNAME</code>文件添加到本地Hexo目录的<code>public</code>文件夹下，部署时就会连同<code>CNAME</code>文件一起部署到Git仓库了。</li>
+<li>也可以用此法为你的仓库添加<code>README.md</code>文件。</li>
+</ul>
+<h1 id="八、最后"><a href="#八、最后" class="headerlink" title="八、最后"></a>八、最后</h1><blockquote>
+<p>Enjoy it！</p>
+</blockquote>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/07/06/CentOS 6.x 一键安装PPTP VPN脚本/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          CentOS 6.x 一键安装PPTP VPN脚本
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/07/01/文章模板/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">模板</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="使用GitHub Pages和Hexo搭建免费独立博客" data-title="使用GitHub Pages和Hexo搭建免费独立博客" data-url="http://www.dittcy.cc/2016/07/03/使用GitHub Pages和Hexo搭建免费独立博客/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"dittcy"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" style="margin-top:20px;">
+    	<div class="footer-left">
+    		&copy; 2018 Ditt.Cy
+    	</div>
+		<!-- 站长统计 -->
+		<div class="footer-left" style="margin-left:10px;">
+    		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259924610'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1259924610%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-79383720-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
